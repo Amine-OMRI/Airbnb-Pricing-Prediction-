@@ -2,7 +2,7 @@
 Application of transfer training from different CNN models pre-trained on ImageNet to new image data
 
 
-                  **Application of transfer learning from different pre-trained CNN models**
+                  <h2>Application of transfer learning from different pre-trained CNN models</h2>
                   
  The task consists of the following steps:
 
