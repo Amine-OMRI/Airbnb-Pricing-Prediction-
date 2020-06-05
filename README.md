@@ -1,8 +1,6 @@
 # -Transfer_learning_Resnet34_and_NasNetMobile
 Application of transfer training from different CNN models pre-trained on ImageNet to new image data
 
-
-                  <h2>Application of transfer learning from different pre-trained CNN models</h2>
                   
  The task consists of the following steps:
 
