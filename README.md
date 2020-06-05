@@ -41,8 +41,8 @@ images from imageNet.
      e) Save the model.
      f) Save the learning history.
      g) Save the values of the performance measures: accuracy, recall/precision/F measure.
-     h) Save loss/accuracy graphs.
- 11. Use the learned model as a feature extractor :
-     d) Load the optimal model from steps 7, 8.a), 8.b)
-     e) Run through the base images and extract the descriptor vector of the last layerbefore CF.
-     f) Save the descriptor vectors.
+     h) Save loss/accuracy graphs.<br/>
+ 11. Use the learned model as a feature extractor :<br/>
+     d) Load the optimal model from steps 7, 8.a), 8.b)<br/>
+     e) Run through the base images and extract the descriptor vector of the last layerbefore CF.<br/>
+     f) Save the descriptor vectors.<br/>
