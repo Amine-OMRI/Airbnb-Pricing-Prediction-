@@ -45,7 +45,8 @@ def nlp\_pipeline(book\_texts):     clean\_books = []
 `    `return clean\_books 
 ```
 
-Apré avoir passer les documents par le pipline NLP il faut vectoriser le corpus maintenant que nous avons le corpus nettoyé, nous pouvons utiliser **TfidfVectorizer** pour convertir le texte en format vectoriel.|![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Screenshot%20from%202021-04-14%2013-04-19.png)
+      Apré avoir passer les documents par le pipline NLP il faut vectoriser le corpus maintenant que nous avons le corpus nettoyé, nous pouvons utiliser    **TfidfVectorizer** pour convertir le texte en format vectoriel.
+      ![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Screenshot%20from%202021-04-14%2013-04-19.png)
 
 ## La partie Analyse de données 
 
@@ -83,60 +84,71 @@ Analyser les données afin de répondre  aux questions et d'obtenir des  informa
 
 **host\_since**: peut être utilisé pour calculer l'expérience des hôtes en fonction de la durée depuis leur première inscription
 
-![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.022.jpeg)|![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.023.png)
+![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.022.jpeg)
+
+![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.023.png)
 
 **amenities**: Créer des features à partir de amenities (équipements)
 
 ![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.024.png)
 
 
-**description** : extraction de features à partir de la description (colonne textuelle) ![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.025.png)à l'aide d'un pipline NLP
+**description** : extraction de features à partir de la description (colonne textuelle) à l'aide d'un pipline NLP
+
+![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.025.png)
 
 
-**calculated\_host\_listings\_count:** valeur continue qui correspond aux nombres effectifs de listings pour les hôtes - mesure permettant de déterminer l'expérience des hôtes ou de distinguer les entreprises et les individus![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.026.jpeg)
+**calculated\_host\_listings\_count:** valeur continue qui correspond aux nombres effectifs de listings pour les hôtes - mesure permettant de déterminer l'expérience des hôtes ou de distinguer les entreprises et les individus
 
-![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.027.jpeg)
+![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.026.jpeg)
+
+![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.027.jpeg)
 
 Visualisation du prix moyen du jour pour deux personnes
 
-![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.028.jpeg)**Calculer les revenus** estimés pour chaque listing, les revenus estimés pour chaque listing seront calculés sur la base du prix d'une nuit et du nombre minimum de nuits à partir de la base de données
+![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.028.jpeg)
 
-![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.029.jpeg)
+**Calculer les revenus** estimés pour chaque listing, les revenus estimés pour chaque listing seront calculés sur la base du prix d'une nuit et du nombre minimum de nuits à partir de la base de données
+
+![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.029.jpeg)
 
 **Cette fois-ci en se basant sur la colonne prix au lieu de revenu**
 
-![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.030.jpeg)
+![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.030.jpeg)
 
 **je récupère les 100 listings les plus chers**
 
-![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.031.jpeg)
+![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.031.jpeg)
 
 
 **Type de bien a acherter**
 
-![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.032.jpeg)
+![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.032.jpeg)
 
 **Cette fois-ci en se basant sur la colonne prix au lieu de revenu**
 
 **je récupère les 100 listings les plus chers**
 
-![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.033.jpeg)
+![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.033.jpeg)
 
 
-La partie  ![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.004.png)![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.034.jpeg)prédiction du prix  des listings 
+## La partie prédiction du prix  des listings 
 
 Ici, j'ai fait une sélection de features et  une analyse de corrélation afin de  trouver le meilleur modèle qui pourrait  s'adapter à nos données 
 
 
-**Le premier essai** : j'ai utilisé un ensemble de données de toutes les colonnes prétraitées sauf celles créées dans la ![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.001.jpeg)partie ingénierie de données (menities, host\_verifications, description)
+**Le premier essai** : j'ai utilisé un ensemble de données de toutes les colonnes prétraitées sauf celles créées dans la partie ingénierie de données (menities, host\_verifications, description)
+![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.001.jpeg)
 
 **Suppression des colonnes comportant beaucoup de valeurs aberrantes**
 
-![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.035.jpeg)
+![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.035.jpeg)
 
-**établir une graphique   ![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.036.jpeg)collinearity heatmap   pour détecter les  features corrélées qui  pourraient empêcher  notre modèle de  converge**r 
+**Etablir une graphique  collinearity heatmap   pour détecter les  features corrélées qui  pourraient empêcher  notre modèle de  converger** 
+![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.036.jpeg)
 
-**Normalisation et  ![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.037.jpeg)standardisation:** 
+**Normalisation et standardisation:**
+![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.037.jpeg) 
 
 A l'exception de  **accommodates** et de  **host\_experience**, les autres  features numériques sont  toutes asymétriques et  pourraient bénéficier d'une  transformation logarithmique 
 
