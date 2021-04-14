@@ -3,6 +3,7 @@
 ## Résumé
 
 Ce projet vise à traiter des données collectées sur le site Aribnb pour la date du 14 décembre 2020 qui comporte toutes les données relatives aux listings a cette date.
+toutes les annonces sont en **ILe-de-France** et **PARIS**
 
 Ce projet comporte trois parties principales : 
 - le premier est une analyse de données qui vise à effectuer une analyse exploratoire des données et à réaliser des visualisations, ce qui inclut le traitement des données nécessaires.
