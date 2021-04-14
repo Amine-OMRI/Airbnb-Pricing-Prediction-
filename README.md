@@ -1,6 +1,6 @@
 # Airbnb-Pricing-Prediction-
 
-##Résumé
+## Résumé
 
 Ce projet vise à traiter des données collectées sur le site Aribnb pour la date du 14 décembre 2020 qui comporte toutes les données relatives aux listings a cette date.
 
@@ -23,61 +23,52 @@ Pré-traitement
 2.  Traiter les valeurs manquantes
 3.  One-hot encode les variables catégorielles
 4.  Feature Engineering: 
-- **last\_review**: cette colonnne servira à filtrer les listes qui ne sont plus active
-- **host\_location**: nous pouvons l'utiliser pour déterminer si l'hôte est local ou non
-- **host\_since**:  peut  être  utilisé  pour  calculer  l'expérience  des  hôtes  en  fonction  du nombres d’années depuis leur première inscription
-- **amenities:**  créer  des  features  à  partir  de  cette  colonne  en  Prétraiter  la  colonne amenities pour extraire tous les valeur amenities possibles et affecter un identifiant à chacun  d'entre  eux,  après  avoir  défini une  fonction  d'encodage  qui  mettra  1  dans l'index correspondant dans une matrice. Et enfin, on va avoir la matrice document - terme en appliquant cette fonction d'encodage à tous les documents du corpus.
+  - **last\_review**: cette colonnne servira à filtrer les listes qui ne sont plus active
+  - **host\_location**: nous pouvons l'utiliser pour déterminer si l'hôte est local ou non
+  - **host\_since**:  peut  être  utilisé  pour  calculer  l'expérience  des  hôtes  en  fonction  du nombres d’années depuis leur première inscription
+  - **amenities:**  créer  des  features  à  partir  de  cette  colonne  en  Prétraiter  la  colonne amenities pour extraire tous les valeur amenities possibles et affecter un identifiant à chacun  d'entre  eux,  après  avoir  défini une  fonction  d'encodage  qui  mettra  1  dans l'index correspondant dans une matrice. Et enfin, on va avoir la matrice document - terme en appliquant cette fonction d'encodage à tous les documents du corpus.
 5.  Del meme facon ( bag-of-words binaire) créer des features à partir de **host\_verifications** 
-
-|||
-| :- | :- |
-|Apré |avoir passer les documents |
-Créer des Feature à partir de colonnes de texte **description**
-
+6. Créer des Feature à partir de colonnes de texte **description**
+```
 def nlp\_pipeline(book\_texts):     clean\_books = []
-
-par le pipline NLP il faut vectoriser le corpus maintenant que nous avons le corpus nettoyé, nous pouvons utiliser **TfidfVectorizer** pour convertir le texte en format vectoriel.
-
-`    `for book in book\_texts:
-
+`for book in book\_texts:
 `        `book = **remove\_hypens**(book)
-
 `        `book\_i = **tokenize\_text**(book)
-
-`        `book\_i = **remove\_characters\_after\_tokenization**(book\_i)         book\_i = **convert\_to\_lowercase**(book\_i)
-
-`        `book\_i = **remove\_stopwords**(book\_i, custom\_stopwords)         book\_i = **get\_lemma**(book\_i)
-
-`        `book\_i = **remove\_short\_tokens**(book\_i) ![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.010.png)
-
-`        `book\_i = **keep\_only\_words\_in\_wordnet**(book\_i)         book\_i = **apply\_lemmatize**(book\_i) 
-
+`        `book\_i = **remove\_characters\_after\_tokenization**(book\_i)         
+          book\_i = **convert\_to\_lowercase**(book\_i)
+`        `book\_i = **remove\_stopwords**(book\_i, custom\_stopwords)         
+          book\_i = **get\_lemma**(book\_i)
+`        `book\_i = **remove\_short\_tokens**(book\_i) 
+`        `book\_i = **keep\_only\_words\_in\_wordnet**(book\_i)         
+          book\_i = **apply\_lemmatize**(book\_i) 
 `        `clean\_books.append(book\_i) 
-
 `    `return clean\_books 
+```
 
+|Apré avoir passer les documents par le pipline NLP il faut vectoriser le corpus maintenant que nous avons le corpus nettoyé, nous pouvons utiliser **TfidfVectorizer** pour convertir le texte en format vectoriel.|
+|![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Screenshot%20from%202021-04-14%2013-04-19.png)|
 
-La partie Analyse  ![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.004.png)![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.005.png)de données 
+## La partie Analyse de données 
 
 Analyser les données afin de répondre  aux questions et d'obtenir des  informations sur le prix des listings. 
 
 
-![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.011.jpeg)
+![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.011.jpeg)
 
-![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.012.jpeg)
+![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.012.jpeg)
 
-![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.013.jpeg)
+![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.013.jpeg)
 
-![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.014.jpeg)
+![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.014.jpeg)
 
-![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.015.jpeg)
+![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.015.jpeg)
 
 
-![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.016.jpeg)
+![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.016.jpeg)
 
 **last\_review**: ce champ servira à filtrer les listes qui ne sont plus actives
 
-![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.017.jpeg)
+![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.017.jpeg)
 
 ![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.018.jpeg)
 
