@@ -45,8 +45,8 @@ def nlp\_pipeline(book\_texts):     clean\_books = []
 `    `return clean\_books 
 ```
 
-      Apré avoir passer les documents par le pipline NLP il faut vectoriser le corpus maintenant que nous avons le corpus nettoyé, nous pouvons utiliser    **TfidfVectorizer** pour convertir le texte en format vectoriel.
-      ![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Screenshot%20from%202021-04-14%2013-04-19.png)
+   Apré avoir passer les documents par le pipline NLP il faut vectoriser le corpus maintenant que nous avons le corpus nettoyé, nous pouvons utiliser    **TfidfVectorizer** pour convertir le texte en format vectoriel.
+   ![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Screenshot%20from%202021-04-14%2013-04-19.png)
 
 ## La partie Analyse de données 
 
@@ -110,9 +110,10 @@ Visualisation du prix moyen du jour pour deux personnes
 
 **Calculer les revenus** estimés pour chaque listing, les revenus estimés pour chaque listing seront calculés sur la base du prix d'une nuit et du nombre minimum de nuits à partir de la base de données
 
+Les listings dans le quartier de l'Hôtel-de-Ville en utilisant folium en se basant sur la colonne **revenu**
 ![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.029.jpeg)
 
-**Cette fois-ci en se basant sur la colonne prix au lieu de revenu**
+**Cette fois-ci en se basant sur la colonne **prix** au lieu de revenu**
 
 ![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.030.jpeg)
 
@@ -137,8 +138,7 @@ Visualisation du prix moyen du jour pour deux personnes
 Ici, j'ai fait une sélection de features et  une analyse de corrélation afin de  trouver le meilleur modèle qui pourrait  s'adapter à nos données 
 
 
-**Le premier essai** : j'ai utilisé un ensemble de données de toutes les colonnes prétraitées sauf celles créées dans la partie ingénierie de données (menities, host\_verifications, description)
-![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.001.jpeg)
+### Le premier essai** : j'ai utilisé un ensemble de données de toutes les colonnes prétraitées sauf celles créées dans la partie ingénierie de données (menities, host\_verifications, description)
 
 **Suppression des colonnes comportant beaucoup de valeurs aberrantes**
 
