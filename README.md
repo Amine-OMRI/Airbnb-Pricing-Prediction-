@@ -1,6 +1,6 @@
 # Airbnb-Pricing-Prediction-
 
-﻿Airbnb Pricing Prediction ![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.001.jpeg)
+﻿Airbnb Pricing Prediction ![https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.001.jpeg](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.001.jpeg)
 
 Amine OMRI
 
