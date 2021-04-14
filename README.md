@@ -83,15 +83,9 @@ Analyser les données afin de répondre  aux questions et d'obtenir des  informa
 
 ![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.021.jpeg)
 
-**host\_since**: peut être utilisé pour calculer l'expérience des hôtes en 
+**host\_since**: peut être utilisé pour calculer l'expérience des hôtes en fonction de la durée depuis leur première inscription
 
-fonction de la durée depuis leur première inscription
-
-![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.022.jpeg)
-
-fonction de la durée depuis leur première inscription
-
-![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.023.png)
+![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.022.jpeg)|![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.023.png)
 
 **amenities**: Créer des features à partir de amenities (équipements)
 
