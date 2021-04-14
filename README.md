@@ -158,7 +158,9 @@ J'ai utilisé différentes  méthodes pour standardiser  mes données :
 - MinMaxScaler 
 - RobustScaler 
 
-Et j'ai gardé MinMaxScaler  puisqu'il conserve la structure  globale des données 
+Et j'ai gardé MinMaxScaler  puisqu'il conserve la structure  globale des données
+
+## Evaluation
 
 **R SQUARED et RMSE**
 
@@ -168,9 +170,9 @@ Et j'ai gardé MinMaxScaler  puisqu'il conserve la structure  globale des donné
 | :- | - | - | - | - |
 |TRAIN|<p>Training RMSE: 0.1914</p><p>Training r2: 0.5128</p>|<p>Training RMSE: 0.1915</p><p>Training r2: 0.5125</p>|<p>Training RMSE: 0.1914</p><p>Training r2: 0.5128</p>|<p>Training MSE: 0.1827</p><p>Training r2: 0.5351</p>|
 |TEST|<p>Validation RMSE: 0.191</p><p>Validation r2: **0.5193**</p>|<p>Validation RMSE: 0.191</p><p>Validation r2: **0.5193**</p>|<p>Validation RMSE: 0.191</p><p>Validation r2: **0.5193**</p>|<p>Validation MSE: 0.1843</p><p>Validation r2: **0.5361**</p>|
-![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.038.jpeg)
 
-### Le deuxième essai : J'ai utilisé un ensemble de données de toutes les colonnes prétraitées et aussi celles créées dans la ![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.001.jpeg)partie ingénierie des données (menities, host\_verifications, description)**
+
+### Le deuxième essai : J'ai utilisé un ensemble de données de toutes les colonnes prétraitées et aussi celles créées dans la partie ingénierie des données (menities, host\_verifications, description)**
 
 **Mon jeu de données était de taille (65917, 2673)**
 
@@ -182,10 +184,10 @@ Et j'ai gardé MinMaxScaler  puisqu'il conserve la structure  globale des donné
 | :- | - | - | - | - |
 |TRAIN|<p>Training RMSE: 0.1504</p><p>Training r2: **0.6172**</p>|<p>Training RMSE: 0.1424</p><p>Training r2: **0.6376**</p>|<p>Training RMSE: 0.1421</p><p>Training r2: **0.6384**</p>|<p>Training MSE: 0.1714</p><p>Training r2: 0.5637</p>|
 |TEST|<p>Validation RMSE: 2.8569801186007695 e+18</p><p>Validation r2: **-7.190735871508386 e+18**</p>|<p>Validation RMSE: 0.1567</p><p>Validation r2: **0.6056**</p>|<p>Validation RMSE: 0.1572</p><p>Validation r2:  **0.6043**</p>|<p>Validation MSE: 0.1783</p><p>Validation r2: **0.5512**</p>|
-**RANDOM FOREST**
 
 
 
+|**RANDOM FOREST**|
 |AVEC n\_estimators = 20|AVEC n\_estimators = 100|
 | - | - |
 |<p>Training RMSE: 0.0271 Validation RMSE: 0.1774</p><p>Training r2: **0.931** Validation r2: **0.5535**</p>|<p>Training RMSE: 0.0234 Validation RMSE: 0.1688</p><p>Training r2: **0.9403** Validation r2: **0.5753**</p>|
