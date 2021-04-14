@@ -138,7 +138,7 @@ Les listings dans le quartier de l'Hôtel-de-Ville en utilisant folium en se bas
 Ici, j'ai fait une sélection de features et  une analyse de corrélation afin de  trouver le meilleur modèle qui pourrait  s'adapter à nos données 
 
 
-### Le premier essai** : j'ai utilisé un ensemble de données de toutes les colonnes prétraitées sauf celles créées dans la partie ingénierie de données (menities, host\_verifications, description)
+### Le premier essai : j'ai utilisé un ensemble de données de toutes les colonnes prétraitées sauf celles créées dans la partie ingénierie de données (menities, host\_verifications, description)
 
 **Suppression des colonnes comportant beaucoup de valeurs aberrantes**
 
@@ -168,7 +168,9 @@ Et j'ai gardé MinMaxScaler  puisqu'il conserve la structure  globale des donné
 | :- | - | - | - | - |
 |TRAIN|<p>Training RMSE: 0.1914</p><p>Training r2: 0.5128</p>|<p>Training RMSE: 0.1915</p><p>Training r2: 0.5125</p>|<p>Training RMSE: 0.1914</p><p>Training r2: 0.5128</p>|<p>Training MSE: 0.1827</p><p>Training r2: 0.5351</p>|
 |TEST|<p>Validation RMSE: 0.191</p><p>Validation r2: **0.5193**</p>|<p>Validation RMSE: 0.191</p><p>Validation r2: **0.5193**</p>|<p>Validation RMSE: 0.191</p><p>Validation r2: **0.5193**</p>|<p>Validation MSE: 0.1843</p><p>Validation r2: **0.5361**</p>|
-![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.038.jpeg)**Le deuxième essai : J'ai utilisé un ensemble de données de toutes les colonnes prétraitées et aussi celles créées dans la ![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.001.jpeg)partie ingénierie des données (menities, host\_verifications, description)**
+![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.038.jpeg)
+
+### Le deuxième essai : J'ai utilisé un ensemble de données de toutes les colonnes prétraitées et aussi celles créées dans la ![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.001.jpeg)partie ingénierie des données (menities, host\_verifications, description)**
 
 **Mon jeu de données était de taille (65917, 2673)**
 
