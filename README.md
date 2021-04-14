@@ -23,10 +23,10 @@ Pré-traitement
 2.  Traiter les valeurs manquantes
 3.  One-hot encode les variables catégorielles
 4.  Feature Engineering: 
-  - **last\_review**: cette colonnne servira à filtrer les listes qui ne sont plus active
-  - **host\_location**: nous pouvons l'utiliser pour déterminer si l'hôte est local ou non
-  - **host\_since**:  peut  être  utilisé  pour  calculer  l'expérience  des  hôtes  en  fonction  du nombres d’années depuis leur première inscription
-  - **amenities:**  créer  des  features  à  partir  de  cette  colonne  en  Prétraiter  la  colonne amenities pour extraire tous les valeur amenities possibles et affecter un identifiant à chacun  d'entre  eux,  après  avoir  défini une  fonction  d'encodage  qui  mettra  1  dans l'index correspondant dans une matrice. Et enfin, on va avoir la matrice document - terme en appliquant cette fonction d'encodage à tous les documents du corpus.
+    * **last\_review**: cette colonnne servira à filtrer les listes qui ne sont plus active
+    * **host\_location**: nous pouvons l'utiliser pour déterminer si l'hôte est local ou non
+    * **host\_since**:  peut  être  utilisé  pour  calculer  l'expérience  des  hôtes  en  fonction  du nombres d’années depuis leur première inscription
+    * **amenities:**  créer  des  features  à  partir  de  cette  colonne  en  Prétraiter  la  colonne amenities pour extraire tous les valeur amenities possibles et affecter un identifiant à chacun  d'entre  eux,  après  avoir  défini une  fonction  d'encodage  qui  mettra  1  dans l'index correspondant dans une matrice. Et enfin, on va avoir la matrice document - terme en appliquant cette fonction d'encodage à tous les documents du corpus.
 5.  Del meme facon ( bag-of-words binaire) créer des features à partir de **host\_verifications** 
 6. Créer des Feature à partir de colonnes de texte **description**
 ```
@@ -45,8 +45,9 @@ def nlp\_pipeline(book\_texts):     clean\_books = []
 `    `return clean\_books 
 ```
 
-|Apré avoir passer les documents par le pipline NLP il faut vectoriser le corpus maintenant que nous avons le corpus nettoyé, nous pouvons utiliser **TfidfVectorizer** pour convertir le texte en format vectoriel.|
-|![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Screenshot%20from%202021-04-14%2013-04-19.png)|
+Apré avoir passer les documents par le pipline NLP il faut vectoriser le corpus maintenant que nous avons le corpus nettoyé, nous pouvons utiliser **TfidfVectorizer** pour convertir le texte en format vectoriel.
+------------ 
+![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Screenshot%20from%202021-04-14%2013-04-19.png)
 
 ## La partie Analyse de données 
 
@@ -70,31 +71,31 @@ Analyser les données afin de répondre  aux questions et d'obtenir des  informa
 
 ![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.017.jpeg)
 
-![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.018.jpeg)
+![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.018.jpeg)
 
 **host\_location**: nous pouvons l'utiliser pour déterminer si l'hôte est local ou non
 
-![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.019.png)
+![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.019.png)
 
-![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.020.jpeg)
+![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.020.jpeg)
 
-![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.021.jpeg)
+![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.021.jpeg)
 
-![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.021.jpeg)
+![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.021.jpeg)
 
 **host\_since**: peut être utilisé pour calculer l'expérience des hôtes en 
 
 fonction de la durée depuis leur première inscription
 
-![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.022.jpeg)
+![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.022.jpeg)
 
 fonction de la durée depuis leur première inscription
 
-![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.023.png)
+![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.023.png)
 
 **amenities**: Créer des features à partir de amenities (équipements)
 
-![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.024.png)
+![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.024.png)
 
 
 **description** : extraction de features à partir de la description (colonne textuelle) ![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.025.png)à l'aide d'un pipline NLP
