@@ -147,7 +147,7 @@ Ici, j'ai fait une sélection de features et  une analyse de corrélation afin d
 **Etablir une graphique  collinearity heatmap   pour détecter les  features corrélées qui  pourraient empêcher  notre modèle de  converger** 
 ![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.036.jpeg)
 
-**Normalisation et standardisation:**
+**Normalisation et standardisation:**</br>
 ![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.037.jpeg) 
 
 A l'exception de  **accommodates** et de  **host\_experience**, les autres  features numériques sont  toutes asymétriques et  pourraient bénéficier d'une  transformation logarithmique 
