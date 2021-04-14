@@ -1,42 +1,19 @@
 # Airbnb-Pricing-Prediction-
 
-﻿Airbnb Pricing Prediction ![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.001.jpeg)
-
-Amine OMRI
-
-Résumé
+##Résumé
 
 Ce projet vise à traiter des données collectées sur le site Aribnb pour la date du 14 décembre 2020 qui comporte toutes les données relatives aux listings a cette date.
 
 Ce projet comporte trois parties principales : 
+- le premier est une analyse de données qui vise à effectuer une analyse exploratoire des données et à réaliser des visualisations, ce qui inclut le traitement des données nécessaires.
+- La seconde consiste à effectuer un prétraitement des données (nettoyage, encodage des données, Features engineering).
+- Le dernier est la modélisation et la prédiction qui comprend également certaines étapes de traitement telles que le traitement des valeurs aberrantes et la sélection des features, ainsi que des visualisations.
 
 
-
-|<p>Prédiction</p><p>03</p>|
-| - |
-|Le dernier est la modélisation et la prédiction qui comprend également certaines étapes de traitement telles que le traitement des valeurs aberrantes et la sélection des features, ainsi que des visualisations.|
-
-|La seconde consiste à effectuer un prétraitement des données (nettoyage, encodage des données, Features engineering).|
-| :- |
-Anayse
-
-01
-
-le premier est une analyse de données qui vise à effectuer une analyse exploratoire des données et à réaliser des visualisations, ce qui inclut le traitement des données nécessaires.
-
-Cycle du projet
-
-![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.002.png)
-
-Analyser et explorer les données, établir des graphiques et vérifier le type de chaque donnée, 
+![Cycle du projet](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Cycle_du_projet.png)
 
 
-
-Traiter les types de  La modélisation et la colonnes (Object, float,  sélection des features int), imputer les valeurs  basées sur l'analyse de manquantes, créer de  corrélation et XGB    
-
-
-
-La partie  ![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.003.jpeg)![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.004.png)Pré-traitement de  ![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.005.png)données 
+## La partie Pré-traitement de données 
 
 Nettoyage et encodage et feature  engineering 
 
