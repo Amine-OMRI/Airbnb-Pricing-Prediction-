@@ -45,9 +45,7 @@ def nlp\_pipeline(book\_texts):     clean\_books = []
 `    `return clean\_books 
 ```
 
-Apré avoir passer les documents par le pipline NLP il faut vectoriser le corpus maintenant que nous avons le corpus nettoyé, nous pouvons utiliser **TfidfVectorizer** pour convertir le texte en format vectoriel.
------------- 
-![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Screenshot%20from%202021-04-14%2013-04-19.png)
+Apré avoir passer les documents par le pipline NLP il faut vectoriser le corpus maintenant que nous avons le corpus nettoyé, nous pouvons utiliser **TfidfVectorizer** pour convertir le texte en format vectoriel.|![](https://github.com/Amine-OMRI/Airbnb-Pricing-Prediction-/blob/main/Airbnb-Pricing-md/Screenshot%20from%202021-04-14%2013-04-19.png)
 
 ## La partie Analyse de données 
 
