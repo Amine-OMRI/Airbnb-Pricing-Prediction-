@@ -19,15 +19,15 @@ Nettoyage et encodage et feature  engineering
 
 Pré-traitement
 
-1  Nettoyage du dataset listings![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.006.png)![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.007.png)
-1  Traiter les valeurs manquantes![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.008.png)![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.006.png)
-1  One-hot encode les variables catégorielles![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.006.png)
-1  Feature Engineering: ![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.006.png)![](Aspose.Words.5d66db9f-6f87-4ae4-9eb7-4d8ce57715a5.009.png)
+1.  Nettoyage du dataset listings
+2.  Traiter les valeurs manquantes
+3.  One-hot encode les variables catégorielles
+4.  Feature Engineering: 
 - **last\_review**: cette colonnne servira à filtrer les listes qui ne sont plus active
 - **host\_location**: nous pouvons l'utiliser pour déterminer si l'hôte est local ou non
 - **host\_since**:  peut  être  utilisé  pour  calculer  l'expérience  des  hôtes  en  fonction  du nombres d’années depuis leur première inscription
 - **amenities:**  créer  des  features  à  partir  de  cette  colonne  en  Prétraiter  la  colonne amenities pour extraire tous les valeur amenities possibles et affecter un identifiant à chacun  d'entre  eux,  après  avoir  défini une  fonction  d'encodage  qui  mettra  1  dans l'index correspondant dans une matrice. Et enfin, on va avoir la matrice document - terme en appliquant cette fonction d'encodage à tous les documents du corpus.
-5  Del meme facon ( bag-of-words binaire) créer des features à partir de **host\_verifications** 
+5.  Del meme facon ( bag-of-words binaire) créer des features à partir de **host\_verifications** 
 
 |||
 | :- | :- |
