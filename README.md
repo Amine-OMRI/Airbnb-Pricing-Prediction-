@@ -188,7 +188,7 @@ Et j'ai gardé MinMaxScaler  puisqu'il conserve la structure  globale des donné
 
 
 
-|**RANDOM FOREST**|
+**RANDOM FOREST**
 |AVEC n\_estimators = 20|AVEC n\_estimators = 100|
 | - | - |
 |<p>Training RMSE: 0.0271 Validation RMSE: 0.1774</p><p>Training r2: **0.931** Validation r2: **0.5535**</p>|<p>Training RMSE: 0.0234 Validation RMSE: 0.1688</p><p>Training r2: **0.9403** Validation r2: **0.5753**</p>|
